@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
+  get 'users/login'
+
   get 'welcome/index'
+
+  get'login' => 'sessions#new'
   resources :articles
+  resources :users
 
   root 'welcome#index'
 
