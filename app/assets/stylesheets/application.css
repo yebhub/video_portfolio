@@ -13,3 +13,89 @@
  *= require_tree .
  *= require_self
  */
+
+.body{
+    background-color: ##001f3f;
+}
+
+
+
+.masthead {
+    position: relative;
+    height: 160px;
+    min-height: 80px;
+    padding: 8px 0;
+   /* border-top: 1px solid #e2e2e2;*/
+    border-bottom: 2px solid #1895c4;
+    background: url(background_building.png) no-repeat center top;;
+} 
+/* #e2e2e2 */
+
+.masthead h1{
+    /*color:##001f3f;*/
+   /* color: #9babba; */
+    color: white;
+    font-size: 400%; 
+    margin-top: 60px;
+    font-family: HelveticaNeue;
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+.portfolio_navigation ul{
+    list-style: none;
+    display: inline;
+    margin: 0 0 1em 0;
+    text-align: right;
+}
+
+.portfolio_navigation ul li{
+    display: inline-block;
+    margin: 5px 2px 5px 0;
+    padding: 0 4px;
+    font-family: Whitney-MediumSC;
+
+}
+
+.portfolio_navigation ul li a{
+    text-decoration: none;
+    color: black;
+    
+    display: inline-block;
+    margin: 5px 2px 5px 0;
+    padding: 0 4px;
+}
+
+
+.portfolio_navigation ul li a:hover{
+    text-decoration: none;
+    color: #e65652;
+    display: inline-block;
+    margin: 5px 2px 5px 0;
+    padding: 0 4px;
+
+    transition: color .3s ease-in-out;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;
+}
+
+.portfolio_navigation{
+    margin-bottom: 0;
+    padding: 4px;
+    text-align: right;
+    white-space: nowrap;
+
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+

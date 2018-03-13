@@ -1,7 +1,12 @@
 class ArticlesController < ApplicationController
-    
+
     def index
-        @articles = Article.all
+        
+        if current_user
+            @articles = Article.all
+        else 
+            redirect_to :controller =>"articles", :action => "new"
+        end 
     end 
     
     def show 

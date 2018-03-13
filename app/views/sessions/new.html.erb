@@ -1,4 +1,6 @@
-
+<%if current_user%>
+    <%= link_to "Log out", logout_path, method: :delete %>
+<%end%>
 
 <% provide(:title, "Log in") %>
 <h1>Log in</h1>
@@ -8,7 +10,7 @@
     <%= form_for(:session, url: login_path) do |f| %>
 
       <%= f.label :username %><br>
-      <%= f.email_field :username, class: 'form-control' %><br>
+      <%= f.text_field :username, class: 'form-control' %><br>
 
       <%= f.label :password %><br>
       <%= f.password_field :password, class: 'form-control' %><br>
