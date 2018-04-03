@@ -1,16 +1,11 @@
-<h1>Listing articles</h1>
+
+<h1 class="words-banner">Words</h1>
  
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-  </tr>
- 
+
+ <ul>
   <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= article.text %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
-    </tr>
+      <li><b><%= link_to article.title, article_path(article) %></b><br>
+        <%= image_tag article.image, :class => "listed-article-image" %></div>
+      </li>
   <% end %>
-</table>
+  </ul>

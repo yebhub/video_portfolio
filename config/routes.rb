@@ -5,12 +5,16 @@ Rails.application.routes.draw do
 
   get 'welcome/index'
 
+  get 'about', to: 'about#show'
+
   get    'login',   to: 'sessions#new'
   post   'login',   to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
 
   resources :articles
   resources :users
+  resources :videos
+  resources :audios
 
   root 'welcome#index'
 

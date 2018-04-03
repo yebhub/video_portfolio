@@ -10,12 +10,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180313222445) do
+ActiveRecord::Schema.define(version: 20180322052813) do
+
+  create_table "article_authors", force: :cascade do |t|
+    t.integer "article_id"
+    t.integer "author_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["article_id"], name: "index_article_authors_on_article_id"
+    t.index ["author_id"], name: "index_article_authors_on_author_id"
+  end
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.string "image"
     t.text "text"
+    t.text "blurb"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "audios", force: :cascade do |t|
+    t.string "title"
+    t.string "src"
+    t.string "summary"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "authors", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -26,6 +50,15 @@ ActiveRecord::Schema.define(version: 20180313222445) do
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "video_authors", force: :cascade do |t|
+    t.integer "video_id"
+    t.integer "author_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["author_id"], name: "index_video_authors_on_author_id"
+    t.index ["video_id"], name: "index_video_authors_on_video_id"
   end
 
   create_table "videos", force: :cascade do |t|

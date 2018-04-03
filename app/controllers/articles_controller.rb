@@ -1,12 +1,8 @@
 class ArticlesController < ApplicationController
+    include SessionsHelper
 
     def index
-        
-        if current_user
-            @articles = Article.all
-        else 
-            redirect_to :controller =>"articles", :action => "new"
-        end 
+        @articles = Article.all
     end 
     
     def show 

@@ -2,8 +2,70 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.shell{
-    width: 970px;
-    margin: 0 auto;
-    position: relative;
+
+
+.column-left{
+    margin-left: 1%;
+    margin-top: 2%;
+    margin-right: 0%;
+    width: 485px;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: #b8c4cf;
+    float: left;
+}
+
+.column-right{
+    border-width: 1px;
+    border-color: #b8c4cf;
+    float: right;
+    margin-top: 2%;
+   
+}
+
+.video-title{
+    font-family:Helvetica;
+    font-size: 30px;
+}
+
+.homepage-video-byline{
+    font-family: Georgia;
+    font-size: 12px;
+    color:#b8c4cf;
+
+}
+
+.homepage-video-summary{
+    font-style: Georgia;
+    font-size: 15px;
+    width: 460px;
+}
+
+.homepage-article-image{
+    width: 275px;
+    height:260px;
+}
+
+.homepage-article-title{
+    font-family:Helvetica;
+    font-size: 30px;
+    width: 400px;
+}
+
+.homepage-article-byline{
+    font-family: Georgia;
+    font-size: 12px;
+    color:#b8c4cf;
+}
+
+.homepage-article-blurb{
+    width:275px;
+}
+
+.homepage-audio{
+    margin-top: 5%;
+}
+
+.homepage-audio-summary{
+    margin-bottom: 5%;
 }

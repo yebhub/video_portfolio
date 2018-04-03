@@ -14,8 +14,71 @@
  *= require_self
  */
 
-.body{
+
+
+/*.body{
     background-color: ##001f3f;
+}*/
+
+
+
+.main-title{
+    position: fixed;
+   /* bottom: 0;*/
+   text-align: center;
+    margin: 0;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    font-family: DIDOT;
+}
+
+.main-title a{
+    text-decoration: none;
+
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+    height: 100%;
+}
+
+.about_title{
+    position: fixed;
+    text-align: center;
+    margin: 0;
+    color: black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    font-family: DIDOT;
+}
+
+.about_title a{
+    text-decoration: none;
+    border-bottom: 1px solid black;
+
+}
+
+.about_content{
+    position: fixed;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    margin-top: 10%;
+    font-family: Georgia;
+
+  
+}
+
+.shell{
+    width: 970px;
+    margin: 0 auto;
+    position: relative;
 }
 
 
@@ -39,63 +102,55 @@
     margin-top: 60px;
     font-family: HelveticaNeue;
     font-weight: bold;
-    margin-left: 5%;
+/*    margin-left: 5%;*/
+    text-align: center;
 }
 
-.portfolio_navigation ul{
+.portfolio_navigation{
     list-style: none;
     display: inline;
     margin: 0 0 1em 0;
-    text-align: right;
+    text-align: center;
+    position: fixed;
+
+
+    bottom: 0;
+   /* background: rgba(0, 0, 0, 0.5);*/
+    width: 100%;
+    padding: 20px;
 }
+
+
 
 .portfolio_navigation ul li{
     display: inline-block;
-    margin: 5px 2px 5px 0;
-    padding: 0 4px;
-    font-family: Whitney-MediumSC;
+    font-family: Generica;
+    font-weight: bold;
+    color: White;
+
 
 }
 
 .portfolio_navigation ul li a{
     text-decoration: none;
-    color: black;
-    
+    color: white;
+    font-size: 200%;
     display: inline-block;
     margin: 5px 2px 5px 0;
     padding: 0 4px;
+    text-align: center;
 }
 
 
-.portfolio_navigation ul li a:hover{
+
+a:visited {
     text-decoration: none;
-    color: #e65652;
-    display: inline-block;
-    margin: 5px 2px 5px 0;
-    padding: 0 4px;
-
-    transition: color .3s ease-in-out;
-    transition-property: color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-    transition-delay: initial;
 }
 
-.portfolio_navigation{
-    margin-bottom: 0;
-    padding: 4px;
-    text-align: right;
-    white-space: nowrap;
-
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
-* {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        outline: 0;
-        font-size: 100%;
-        vertical-align: baseline;
-        background: transparent;
-    }
+
 
