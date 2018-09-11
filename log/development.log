@@ -11144,3 +11144,212 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 233ms (Views: 187.4ms | ActiveRecord: 7.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-04-03 11:15:55 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  [1m[36mVideo Load (0.3ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" ORDER BY "videos"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAudio Load (0.5ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" ORDER BY "audios"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 4.2ms)
+
+
+  
+SyntaxError (/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:5: syntax error, unexpected '<', expecting ')'
+<div class="main-title">
+^
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:6: syntax error, unexpected '<'
+  <h1><a href="/">ILLUSTRATIVE M...
+  ^
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:6: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+...<a href="/">ILLUSTRATIVE MOTION</a></h1>
+...                         ^~~~~~
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:6: unknown regexp option - h
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:6: syntax error, unexpected tINTEGER, expecting ')'
+..."/">ILLUSTRATIVE MOTION</a></h1>
+...                              ^
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:11: unknown regexp option - a
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:11: syntax error, unexpected '<'
+    <li><a href="">WORK</a></li>
+                           ^
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:12: unknown regexp option - a
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:12: syntax error, unexpected '<'
+    <li><a href="">CONTACT</a></li>
+                              ^
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:13: unknown regexp options - abt
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:13: syntax error, unexpected tSTRING_BEG, expecting ')'
+    <li><a href="/about">ABOUT</a></li>
+                       ^
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:25: unterminated string meets end of file
+          end
+             ^
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:25: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/welcome/index.html.erb:5: syntax error, unexpected '<', expecting ')'
+app/views/welcome/index.html.erb:6: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:6: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:6: unknown regexp option - h
+app/views/welcome/index.html.erb:6: syntax error, unexpected tINTEGER, expecting ')'
+app/views/welcome/index.html.erb:11: unknown regexp option - a
+app/views/welcome/index.html.erb:11: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:12: unknown regexp option - a
+app/views/welcome/index.html.erb:12: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:13: unknown regexp options - abt
+app/views/welcome/index.html.erb:13: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/welcome/index.html.erb:25: unterminated string meets end of file
+app/views/welcome/index.html.erb:25: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-04-03 11:16:08 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mVideo Load (0.3ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" ORDER BY "videos"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAudio Load (0.5ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" ORDER BY "audios"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.6ms)
+
+
+  
+SyntaxError (/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:5: syntax error, unexpected '<', expecting ')'
+<div class="main-title">
+^
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:6: syntax error, unexpected '<'
+  <h1><a href="/">ILLUSTRATIVE M...
+  ^
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:6: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+...<a href="/">ILLUSTRATIVE MOTION</a></h1>
+...                         ^~~~~~
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:6: unknown regexp option - h
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:6: syntax error, unexpected tINTEGER, expecting ')'
+..."/">ILLUSTRATIVE MOTION</a></h1>
+...                              ^
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:11: unknown regexp option - a
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:11: syntax error, unexpected '<'
+    <li><a href="">WORK</a></li>
+                           ^
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:12: unknown regexp option - a
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:12: syntax error, unexpected '<'
+    <li><a href="">CONTACT</a></li>
+                              ^
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:13: unknown regexp options - abt
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:13: syntax error, unexpected tSTRING_BEG, expecting ')'
+    <li><a href="/about">ABOUT</a></li>
+                       ^
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:25: unterminated string meets end of file
+          end
+             ^
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:25: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/welcome/index.html.erb:5: syntax error, unexpected '<', expecting ')'
+app/views/welcome/index.html.erb:6: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:6: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/welcome/index.html.erb:6: unknown regexp option - h
+app/views/welcome/index.html.erb:6: syntax error, unexpected tINTEGER, expecting ')'
+app/views/welcome/index.html.erb:11: unknown regexp option - a
+app/views/welcome/index.html.erb:11: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:12: unknown regexp option - a
+app/views/welcome/index.html.erb:12: syntax error, unexpected '<'
+app/views/welcome/index.html.erb:13: unknown regexp options - abt
+app/views/welcome/index.html.erb:13: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/welcome/index.html.erb:25: unterminated string meets end of file
+app/views/welcome/index.html.erb:25: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-04-03 11:16:24 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" ORDER BY "videos"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAudio Load (0.3ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" ORDER BY "audios"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:4: Can't assign to true
+  true, loop: true, id: "myVideo", t...
+      ^
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:4: syntax error, unexpected tLABEL, expecting '='
+  true, loop: true, id: "myVideo", type:"v...
+        ^~~~~
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:4: Can't assign to true
+  true, loop: true, id: "myVideo", type:"video/w...
+                  ^
+/Users/WizardFartSauce/Desktop/jordan-writing-portfolio/app/views/welcome/index.html.erb:4: syntax error, unexpected ',', expecting ')'
+...rue, loop: true, id: "myVideo", type:"video/webm" );@output_...
+...                              ^):
+  
+app/views/welcome/index.html.erb:4: Can't assign to true
+app/views/welcome/index.html.erb:4: syntax error, unexpected tLABEL, expecting '='
+app/views/welcome/index.html.erb:4: Can't assign to true
+app/views/welcome/index.html.erb:4: syntax error, unexpected ',', expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-04-03 11:16:37 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" ORDER BY "videos"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" ORDER BY "audios"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (218.0ms)
+Completed 200 OK in 291ms (Views: 285.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 11:17:09 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mVideo Load (0.3ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" ORDER BY "videos"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAudio Load (0.2ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" ORDER BY "audios"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 64ms (Views: 56.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 11:17:55 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mVideo Load (0.2ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" ORDER BY "videos"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAudio Load (0.1ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" ORDER BY "audios"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 65ms (Views: 60.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-04 16:34:30 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  [1m[36mVideo Load (0.1ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" ORDER BY "videos"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mArticle Load (2.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAudio Load (0.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" ORDER BY "audios"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (246.9ms)
+Completed 200 OK in 409ms (Views: 332.9ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-04-04 16:54:42 -0400
+Processing by AboutController#show as HTML
+  Rendering about/show.html.erb within layouts/application
+  Rendered about/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 135ms (Views: 127.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-04 19:22:25 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mVideo Load (3.1ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" ORDER BY "videos"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAudio Load (1.9ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" ORDER BY "audios"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 186ms (Views: 137.8ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-07 12:18:22 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mVideo Load (23.3ms)[0m  [1m[34mSELECT  "videos".* FROM "videos" ORDER BY "videos"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mArticle Load (4.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mAudio Load (1.4ms)[0m  [1m[34mSELECT  "audios".* FROM "audios" ORDER BY "audios"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (172.1ms)
+Completed 200 OK in 1364ms (Views: 952.7ms | ActiveRecord: 28.9ms)
+
+
